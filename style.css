@@ -298,6 +298,12 @@ accordion__item {
     color: #1F1F1F;
 }
 
+.accordion__header::after {
+    position: absolute;
+    right: 0;
+    transition: transform 0.3s;
+}
+
 .accordion__arrow {
     transition: transform 0.3s;
     margin-right: 10px;
@@ -313,6 +319,7 @@ accordion__item {
     color: #555;
     font-size: 14px;
     line-height: 1.6;
+    font-size: 16px;
 }
 
 .accordion__item.active .accordion__content {
