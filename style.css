@@ -22,20 +22,20 @@ h1,h2,h3,h4,h5,h6,p {
 }
 .left {
   float: left;
-  width: 10%; /* The width is 20%, by default */
+  width: 10%; 
   align-items: center;
 }
 
 .middle {
   padding: 30px;
   float: left;
-  width: 70%; /* The width is 60%, by default */
+  width: 70%; 
 }
 
 .right {
     padding: 30px 0px;
   float: left;
-  width: 20%; /* The width is 20%, by default */
+  width: 20%; 
   justify-content: flex-start
 }
 
@@ -54,8 +54,7 @@ h1,h2,h3,h4,h5,h6,p {
     justify-content: space-between;
     padding-top: 20px;
 }
-
-/*Navigation*/
+xs
 .nav{
     font-size: 15px;
     padding-right: 380px;
@@ -277,10 +276,6 @@ main > div {
 
 }
 
-accordion__item {
-    border-bottom: 1px solid #ccc;
-}
-
 .accordion__header__wrapper {
     display: flex;
     align-items: center;
@@ -298,6 +293,12 @@ accordion__item {
     color: #1F1F1F;
 }
 
+.accordion__header::after {
+    position: absolute;
+    right: 0;
+    transition: transform 0.3s;
+}
+
 .accordion__arrow {
     transition: transform 0.3s;
     margin-right: 10px;
@@ -313,6 +314,7 @@ accordion__item {
     color: #555;
     font-size: 14px;
     line-height: 1.6;
+    font-size: 16px;
 }
 
 .accordion__item.active .accordion__content {
@@ -388,7 +390,7 @@ accordion__item {
 
 .blue_features_info_desc{
     font-size: 18px;
-    font-weight: 300r;
+    font-weight: 300;
     margin-bottom: 20px;
 }
 
